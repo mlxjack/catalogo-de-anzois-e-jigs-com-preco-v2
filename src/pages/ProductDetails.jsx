@@ -416,13 +416,6 @@ export default function ProductDetails() {
               </table>
             </div>
 
-            {product.description && (
-              <div className="info-section">
-                <h2 className="info-section-title">Descrição</h2>
-                <div className="info-desc" dangerouslySetInnerHTML={{ __html: product.description }} />
-              </div>
-            )}
-
             <div className="detail-actions">
               <button className="btn btn-primary btn-whatsapp" onClick={() => window.open(getWhatsAppLink(), '_blank', 'noopener noreferrer')} type="button">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
@@ -450,6 +443,13 @@ export default function ProductDetails() {
                 <Link to="/" className="btn btn-secondary">Voltar ao Catálogo</Link>
               </div>
             </div>
+
+            {product.description && (
+              <div className="info-section">
+                <h2 className="info-section-title">Descrição</h2>
+                <div className="info-desc" dangerouslySetInnerHTML={{ __html: product.description }} />
+              </div>
+            )}
           </section>
         </div>
       </main>
