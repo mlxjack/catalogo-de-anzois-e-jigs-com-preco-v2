@@ -431,7 +431,7 @@ export default function ProductDetails() {
                 </div>
                 <button
                   type="button"
-                  className="btn btn-secondary"
+                  className="btn btn-selecao"
                   disabled={!canAddToSelecao}
                   onClick={handleAddToSelecao}
                 >
